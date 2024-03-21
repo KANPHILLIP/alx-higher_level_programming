@@ -7,5 +7,3 @@ for i in range(4, 6):
 return c
 else:
     return sub(a, b)
-
-
