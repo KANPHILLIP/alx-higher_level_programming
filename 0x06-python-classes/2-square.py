@@ -5,9 +5,9 @@
 class Square:
     """Represents a square"""
     def __init__(self, size=0):
-        """Constructor.
+        """initialising a new square
         Args:
-            size: length of side of the square.
+            size(int): size of the new square.
         """
 
         if not isinstance(size, int):
