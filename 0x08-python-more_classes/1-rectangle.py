@@ -3,7 +3,7 @@
 
 
 class Rectangle:
-    """Represents a rectangle"""
+    """Representaion of a rectangle"""
 
     def __init__(self, width=0, height=0):
         """initilize a new rectangle
@@ -12,8 +12,8 @@ class Rectangle:
         width (int): width of the new rectangle
         height (int): height of the new rectangle
         """
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
 
     @property
     def width(self):
