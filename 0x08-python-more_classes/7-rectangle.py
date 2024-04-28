@@ -8,7 +8,6 @@ class Rectangle:
     number_of_instances = 0
     print_symbol = '#'
 
-
     def __init__(self, width=0, height=0):
         """initilize a new rectangle
         Args:
@@ -82,7 +81,7 @@ class Rectangle:
         for i in range(self.height):
             rectangle += (str(self.print_symbol) * self.width) + "\n"
         return rectangle[:-1]
-        
+
     def __repr__(self):
         """returns string represantation of the
         rectangle to be able to recreate new instance
