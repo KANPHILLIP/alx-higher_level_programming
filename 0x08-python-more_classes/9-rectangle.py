@@ -124,4 +124,3 @@ class Rectangle:
         size: size of the rectangle
         """
         return cls(size, size)
-
