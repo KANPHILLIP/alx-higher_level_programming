@@ -6,6 +6,7 @@ with the add_integer function.
 
 
 def add_integer(a, b=98):
+
     """returns an integer addition of a + b
     float arguments are type casted into integers before
     addition.
@@ -16,8 +17,10 @@ def add_integer(a, b=98):
         raise TypeError("a must be an integer")
     if not (isinstance(b, int) and not isinstance(b, float)):
         raise TypeError("b must be an integer")
-        return int(a) + int(b)
+        return (int(a) + int(b))
 
-if __name__=="__main__":
+
+if __name__ == "__main__":
+
     import doctest
     doctest.testfile("tests/0-add_integer.txt")
