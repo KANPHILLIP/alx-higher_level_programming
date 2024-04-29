@@ -1,6 +1,15 @@
 # 0-add_integer.txt
 
-###########################
+==========================
 how to use 0-add_integer.py
-###########################
+===========================
 
+This module defines an integer addition function "add_integer"
+
+usage
+=====
+
+'''add_integer(...)''' returns the sum of the two arguments
+that value is equivalent to using "+" operator
+
+::
