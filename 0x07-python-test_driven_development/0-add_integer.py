@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 # 0-add_integer.py
-""" module that defines integer addition
-with the add_integer function.
-"""
+""" module for add_integer method"""
 
 
 def add_integer(a, b=98):
@@ -10,6 +8,11 @@ def add_integer(a, b=98):
     """returns an integer addition of a + b
     float arguments are type casted into integers before
     addition.
+
+    Args:
+    a: the first integer
+    b: the second integer with a default value of 98
+
     Raises: TypeError if a or b are not integers
     """
 
