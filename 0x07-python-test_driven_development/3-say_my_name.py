@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" module to print name"""
+""" module for say_my_name method"""
 
 
 def say_my_name(first_name, last_name=""):
@@ -9,18 +9,19 @@ def say_my_name(first_name, last_name=""):
     last_name: last name has to be a string
 
     Raises:
-    TypeError: if first name and last name are not strings
+    TypeError: if first_name and last_name are not strings
 
     Return: first and last name
     """
-    if not isinstance((first_name, str) and not isinstance(last_name, str)):
-        raise TypeError("first_name must be a string or last_name must be a string")
+    if not isinstance(first_name, str):
+        raise TypeError("first_name must be a string")
+    if not isinstance(last_name, str):
+        raise TypeError("last_name must be a string")
 
-    return "My name is {} {}".format(first_name, last_name)
+        return "My name is {:s} {:s}".format(first_name, last_name)
 
 
 if __name__ == "__main__":
 
     import doctest
     doctest.test.file("test/3-say_my_name.txt")
-
