@@ -8,4 +8,4 @@ def from_json_string(my_str):
     a Json string
     """
     my_stringJSON = json.dumps(my_str)
-    print(my_stringJSON)
+    return my_stringJSON
