@@ -1,10 +1,7 @@
 #!/usr/bin/python3
-""" a module to convert to json file"""
+""" to json module """
 import json
 
-
-def from_json_string(my_str):
-    """ method that return a object represented by
-    a Json string
-    """
-    return json.dumps(my_str)
+def to_json_string(my_obj):
+    """Converts a Python object to a JSON string"""
+    return json.dumps(my_obj)
