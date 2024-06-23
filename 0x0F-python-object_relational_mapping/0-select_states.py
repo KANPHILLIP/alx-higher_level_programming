@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" a script that list all the states in a database ordered by id in asc order """
+""" a script that list all the states"""
 import MySQLdb
 import sys
 if __name__ == "__main__":
