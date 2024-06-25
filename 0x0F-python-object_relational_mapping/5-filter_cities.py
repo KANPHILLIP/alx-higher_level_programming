@@ -18,7 +18,7 @@ if __name__ == "__main__":
             WHERE states.name LIKE BINARY %(name)s \
             ORDER BY cities ASC",{'name': sys.argv[4]})
     rows = cur.fetchall()
-    for row in rows:
-        print(row)
+    if rows is not None:
+        print(", ".join([row[1] for row in rows)
     cur.close()
     db.close()
