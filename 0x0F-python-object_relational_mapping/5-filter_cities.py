@@ -13,12 +13,23 @@ if __name__ == "__main__":
             port=3306
             )
     cur = db.cursor()
-    cur.execute("SELECT cities.id, cities.name, states.name FROM\
-            cities JOIN states ON cities.states_id = states.id \
-            WHERE states.name LIKE BINARY %(name)s \
-            ORDER BY cities ASC",{'name': sys.argv[4]})
-    rows = cur.fetchall()
-    if rows is not None:
-        print(", ".join([row[1] for row in rows)
-    cur.close()
-    db.close()
+    cur.execute("""
+            SELECT cities.id, cities.name
+            FROM
+                cities
+            JOIN
+                states
+            ON
+                cities.state_id = states.id
+            WHERE
+                states.name LIKE BINARY %(name)s
+            ORDER BY
+                city.id ASC
+        """, {
+            'state_name': sys.argv[4]
+            })
+        rows = cur.fetchall()
+        if rows is not None:
+            print(", ".join([row[1] for row in rows)
+        cur.close()
+        db.close()
